@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_splash"
+    android:background="@color/whitish"
+    tools:context="suraj.android.adsmania.SplashActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txtv_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/app_orange"
+            android:text="@string/ads"/>
+
+        <TextView
+            android:id="@+id/txtv_mania"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/app_blue"
+            android:layout_toRightOf="@+id/txtv_ads"
+            android:text="@string/mania"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/txtv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="Please Wait..."/>
+
+        <TextView
+            android:id="@+id/txtv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtv_message"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="Downloading ad "/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/MyProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:layout_below="@+id/txtv_desc"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
