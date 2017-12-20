@@ -38,6 +38,7 @@ public class DisplayActivity extends Activity implements MediaPlayer.OnCompletio
 
         setUpUi();
 
+        Toast.makeText(DisplayActivity.this, "this is new change", Toast.LENGTH_SHORT).show();
 
         paths1 = new ArrayList<String>();
         for(int j=0;j<listOfFiles.length;j++)
